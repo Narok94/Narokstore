@@ -1,0 +1,6 @@
+{
+  "name": "KICKSLAB",
+  "description": "Vitrine virtual de sneakers e streetwear com curadoria exclusiva de lançamentos e marcas icônicas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
