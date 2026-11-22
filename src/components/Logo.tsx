@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import defaultLogo from '../assets/images/narok-logo.jpg';
 
 interface LogoProps {
   tone?: 'dark' | 'light';
@@ -8,7 +9,7 @@ interface LogoProps {
 
 export function Logo({
   tone = 'dark',
-  src = '/logo.png',
+  src = defaultLogo,
   className = '',
 }: LogoProps) {
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -22,12 +23,14 @@ export function Logo({
         <img
           src={src}
           alt="NAROK STORE"
+          width={1280}
+          height={511}
           onLoad={() => setImageLoaded(true)}
           onError={() => setImageFailed(true)}
           className={
             imageLoaded
-              ? 'h-9 w-auto object-contain'
-              : 'sr-only h-9 w-auto object-contain'
+              ? 'h-auto w-32 sm:w-36 rounded-sm object-contain'
+              : 'sr-only h-auto w-32 sm:w-36 object-contain'
           }
         />
       )}

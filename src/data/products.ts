@@ -2,7 +2,7 @@ import type { Product } from '../types';
 
 export const HERO_IMAGE = '/src/assets/images/narok_hero_sneaker_1795176064446.jpg';
 
-export const WHATSAPP_BASE_URL = 'https://wa.me/5511999999999';
+export const WHATSAPP_BASE_URL = 'https://wa.me/5535987074375';
 
 export function buildWhatsAppLink(message: string): string {
   return `${WHATSAPP_BASE_URL}?text=${encodeURIComponent(message)}`;
